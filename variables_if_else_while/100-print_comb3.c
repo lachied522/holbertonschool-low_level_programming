@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Prints all unique combinations of digits from 0 to 9 to stdout without 'char'
+ * main - Prints all unique combinations of from 0 to 9
  * Return: 0
  */
 
