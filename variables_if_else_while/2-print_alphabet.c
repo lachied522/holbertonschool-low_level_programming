@@ -8,7 +8,7 @@
 int main(void)
 {
 	int i;
-	char* alphabet;
+	char *alphabet;
 
 	alphabet = "abcdefghijklmnopqrstuvwxyz";
 
