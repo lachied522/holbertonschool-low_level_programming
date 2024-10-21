@@ -7,11 +7,14 @@
 
 int main(void)
 {
-	char ch;
+	int i;
+	char* alphabet;
 
-	for (ch='a'; ch<='z'; ch++)
+	alphabet = "abcdefghijklmnopqrstuvwxyz";
+
+	for (i = 0; i < 26; i++)
 	{
-		putchar(ch);
+		putchar(alphabet[i]);
 	}
 
 	putchar('\n');
