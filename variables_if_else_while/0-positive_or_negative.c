@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 
-/*
+/**
  * main - Prints whether random int n is positive or negative
  * Returns 0
  */
