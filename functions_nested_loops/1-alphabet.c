@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
  * print_alphabet - prints chars from 'a' to 'z'
  */
 
