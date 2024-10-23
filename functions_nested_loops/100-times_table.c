@@ -9,11 +9,18 @@
 int print_times_table(int n)
 {
 	int row;
-	int col;
+	int col
 	int product;
 
-	if (n < 1 || n > 15)
+	if (n < 0 || n > 15)
 	{
+		return (0);
+	}
+
+	if (n == 0)
+	{
+		_putchar('0');
+		_putchar('\n');
 		return (0);
 	}
 
