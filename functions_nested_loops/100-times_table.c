@@ -9,7 +9,7 @@
 int print_times_table(int n)
 {
 	int row;
-	int col
+	int col;
 	int product;
 
 	if (n < 0 || n > 15)
