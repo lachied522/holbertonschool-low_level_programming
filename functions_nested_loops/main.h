@@ -23,6 +23,8 @@ int jack_bauer(void);
 
 int times_table(void);
 
+int print_times_table(int n);
+
 int add(int a, int b);
 
 int print_to_98(int n);
