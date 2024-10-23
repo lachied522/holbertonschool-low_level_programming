@@ -12,7 +12,7 @@ int print_times_table(int n)
 	int col;
 	int product;
 
-	if (n < 0 || n > 15)
+	if (n < 1 || n > 15)
 	{
 		return (0);
 	}
@@ -25,8 +25,6 @@ int print_times_table(int n)
 		for (col = 1; col <= n; col++)
 		{
 			product = row * col;
-
-			_putchar(' ');
 
 			if (product < 10)
 			{
