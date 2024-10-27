@@ -5,7 +5,7 @@
  * Return: 0
  */
 
-int more_numbers()
+int more_numbers(void)
 {
 	int i;
 	int j;
