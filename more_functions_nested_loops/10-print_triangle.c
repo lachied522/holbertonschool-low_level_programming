@@ -34,7 +34,7 @@ int print_triangle(int size)
 			}
 			j++;
 		}
-	
+
 		_putchar('\n');
 		i++;
 	}
