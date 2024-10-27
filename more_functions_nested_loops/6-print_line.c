@@ -2,7 +2,7 @@
 
 /**
  * print_line - prints '_' n times, followed by new line
- * @n int, length of line
+ * @n: length of line
  * Return: 0
  */
 
