@@ -8,27 +8,27 @@
 
 void rev_string(char *s)
 {
-	char *first;
-	char *last;
+	int left;
+	int right;
 	char temp;
 
-	first = s;
-	last = s;
+	left = 0;
+	right = 0;
 
-	while (*last != '\0')
+	while (s[right] != '\0')
 	{
-		last++;
+		right++;
 	}
 
-	last--;
+	right--;
 
-	while (first != last)
+	while (left < right)
 	{
-		temp = *first;
-		*first = *last;
-		*last = temp;
+		temp = s[left];
+		s[left] = s[right];
+		s[right] = temp;
 
-		first++;
-		last--;
+		left++;
+		right--;
 	}
 }
