@@ -9,7 +9,7 @@
 int _atoi(char *s)
 {
 	int i;
-	int num;
+	unsigned int num;
 	int isNegative;
 
 	i = 0;
@@ -35,5 +35,5 @@ int _atoi(char *s)
 		i++;
 	}
 
-	return (isNegative ? -num: num);
+	return (isNegative ? -num : num);
 }
