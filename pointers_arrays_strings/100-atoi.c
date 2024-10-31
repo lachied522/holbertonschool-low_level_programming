@@ -11,25 +11,32 @@ int _atoi(char *s)
 	int i;
 	unsigned int num;
 	int isNegative;
+	int hasEncounteredNumber;
 
 	i = 0;
 	num = 0;
 	isNegative = 0;
+	hasEncounteredNumber = 0;
 
 	while (s[i] != '\0')
 	{
-		if (s[i] == '-')
+		if ('0' <= s[i] && s[i] <= '9')
 		{
-			isNegative = 1 - isNegative;
-		}
-		else if ('0' <= s[i] && s[i] <= '9')
-		{
+			hasEncounteredNumber = 1;
 			num *= 10;
 			num += s[i] - '0';
 		}
-		else if (s[i] == ';')
+		else
 		{
-			break;
+			if (hasEncounteredNumber == 1)
+			{
+				break;
+			}
+			else if (s[i] == '-')
+			{
+				isNegative = 1 - isNegative;
+			}
+			
 		}
 
 		i++;
