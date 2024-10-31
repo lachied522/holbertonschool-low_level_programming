@@ -10,6 +10,7 @@ char *leet(char *s)
 {
 	char map[256];
 	int i;
+	int c;
 
 	map['a'] = '4';
 	map['A'] = '4';
@@ -26,9 +27,10 @@ char *leet(char *s)
 
 	while (s[i] != '\0')
 	{
-		if (map[s[i]] != '\0')
+		c = s[i] - '\0';
+		if (map[c] != '\0')
 		{
-			s[i] = map[s[i]];
+			s[i] = map[c];
 		}
 
 		i++;
