@@ -3,8 +3,8 @@
 
 /**
  * print_diagsums - prints sums of two diagonals of square matrix
- * a: square matrix
- * size: size of matrix
+ * @a: square matrix
+ * @size: size of matrix
  * Return: nothing
  */
 
