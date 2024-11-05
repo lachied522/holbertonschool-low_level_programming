@@ -29,7 +29,7 @@ char *_strstr(char *haystack, char *needle)
 		}
 
 		if (match == 1)
-			break;
+			return (haystack);
 
 		haystack++;
 	}
