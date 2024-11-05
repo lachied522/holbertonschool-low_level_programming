@@ -3,7 +3,7 @@
 
 /**
  * print_chessboard - prints chessboard
- * a: 8x8 character array
+ * @a: 8x8 character array
  * Return: nothing
  */
 
