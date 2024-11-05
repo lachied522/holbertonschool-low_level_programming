@@ -4,7 +4,7 @@
  * _strpbrk - returns first occurence in s of any byte in accept
  * @s: character array
  * @accept: character array to accept
- * Returns: pointer to first occurence
+ * Return: pointer to first occurence
  */
 
 char *_strpbrk(char *s, char *accept)

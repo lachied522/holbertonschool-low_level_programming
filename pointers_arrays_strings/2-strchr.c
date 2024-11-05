@@ -4,7 +4,7 @@
  * _strchr - returns pointer to first occurence of c in char array
  * @s: character array
  * @c: character to look for
- * Returns: pointer
+ * Return: pointer to first occurence or null
  */
 
 char *_strchr(char *s, char c)
@@ -16,6 +16,6 @@ char *_strchr(char *s, char c)
 		s++;
 	}
 
-	return ('\0');
+	return (c == '\0' ? s : '\0');
 }
 

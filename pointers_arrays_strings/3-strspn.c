@@ -4,7 +4,7 @@
  * _strspn - returns number of bytes in s that are also in accept
  * @s: character array
  * @accept: character array to accept
- * Returns: number of bytes
+ * Return: number of bytes
  */
 
 unsigned int _strspn(char *s, char *accept)
