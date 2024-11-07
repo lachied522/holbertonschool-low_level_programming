@@ -8,6 +8,13 @@
 
 int sqrt_step(int sum, int iter);
 
+/**
+ * sqrt_step - step of subtraction method
+ * @sum: running sum
+ * @iter: current iteration
+ * Return: number of iterations or -1
+ */
+
 int sqrt_step(int sum, int iter)
 {
 	int _sum;
