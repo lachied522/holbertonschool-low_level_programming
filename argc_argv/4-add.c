@@ -11,15 +11,15 @@
 
 int main(int argc, char *argv[])
 {
-	unsigned int i;
-	unsigned int j;
+	int i;
+	int j;
 	int isNumber;
 	int sum;
 
 	for (i = 1; i < argc; i++)
 	{
 		isNumber = 1;
-		for (j = 0; j < strlen(argv[i]); j++)
+		for (j = 0; (unsigned int) j < strlen(argv[i]); j++)
 		{
 			if (
 				argv[i][j] != '-' &&
