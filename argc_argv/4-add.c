@@ -12,23 +12,25 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	int j;
+	char *s;
 	int isNumber;
 	int sum;
 
 	for (i = 1; i < argc; i++)
 	{
 		isNumber = 1;
-		for (j = 0; (unsigned int) j < strlen(argv[i]); j++)
+		s = argv[i];
+		while (*s != '\0')
 		{
 			if (
-				argv[i][j] != '-' &&
-				!('0' <= argv[i][j] && argv[i][j] <= '9')
+				*s != '-' &&
+				!('0' <= *s && *s <= '9')
 			)
 			{
 				isNumber = 0;
 				break;		
 			}
+			s++;
 		}
 		if (isNumber == 0)
 		{
