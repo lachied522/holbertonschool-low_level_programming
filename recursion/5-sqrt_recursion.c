@@ -1,11 +1,5 @@
 #include "main.h"
 
-/**
- * _sqrt_recursion  - returns natural square root of n
- * @n: number to get square root of
- * Return: natural square root of n, or -1 if doesn't exist
- */
-
 int sqrt_step(int sum, int iter);
 
 /**
@@ -14,7 +8,6 @@ int sqrt_step(int sum, int iter);
  * @iter: current iteration
  * Return: number of iterations or -1
  */
-
 int sqrt_step(int sum, int iter)
 {
 	int _sum;
@@ -30,6 +23,11 @@ int sqrt_step(int sum, int iter)
 	return (sqrt_step(_sum, iter + 1));
 }
 
+/**
+ * _sqrt_recursion  - returns natural square root of n
+ * @n: number to get square root of
+ * Return: natural square root of n, or -1 if doesn't exist
+ */
 int _sqrt_recursion(int n)
 {
 	return (sqrt_step(n, 0));
