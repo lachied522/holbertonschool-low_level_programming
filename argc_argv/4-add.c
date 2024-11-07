@@ -11,8 +11,8 @@
 
 int main(int argc, char *argv[])
 {
-	int i;
-	int j;
+	unsigned int i;
+	unsigned int j;
 	int isNumber;
 	int sum;
 
