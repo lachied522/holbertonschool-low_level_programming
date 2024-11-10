@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * strdup - creates a duplicate of a string
+ * _strdup - creates a duplicate of a string
  * @str: character to initialise with
  * Return: pointer to new string or NULL
  */
@@ -25,13 +25,13 @@ char *_strdup(char *str)
 		i++;
 	}
 
-	buffer = malloc(size);
+	buffer = malloc(size + 1);
 
 	if (buffer == NULL)
 		return (NULL);
 
 	i = 0;
-	while (i < size)
+	while (i < size + 1)
 	{
 		buffer[i] = str[i];
 		i++;
