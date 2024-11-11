@@ -15,6 +15,8 @@ int main(int argc, char *argv[])
 	char *s;
 	int sum;
 
+	sum = 0;
+
 	for (i = 1; i < argc; i++)
 	{
 		s = argv[i];
