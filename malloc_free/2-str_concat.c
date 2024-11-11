@@ -7,13 +7,13 @@
  * @s2: second string
  * Return: pointer to concatenated string or NULL
  */
-
 char *str_concat(char *s1, char *s2)
 {
 	char *buffer;
 	unsigned int i;
 	unsigned int size1;
 	unsigned int size2;
+
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
