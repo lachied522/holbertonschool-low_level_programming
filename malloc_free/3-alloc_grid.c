@@ -13,6 +13,7 @@ int **alloc_grid(int width, int height)
 	int **buffer;
 	int i;
 	int j;
+	int k;
 
 	if (width == 0 || height == 0)
 		return (NULL);
@@ -28,6 +29,9 @@ int **alloc_grid(int width, int height)
 
 		if (buffer[i] == NULL)
 		{
+			for (k = 0; k < i; k++)
+				free(buffer[k]);
+
 			free(buffer);
 			return (NULL);
 		}
