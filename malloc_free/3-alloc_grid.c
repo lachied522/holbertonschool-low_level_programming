@@ -3,7 +3,7 @@
 
 /**
  * alloc_grid - returns pointer to two dimensional array
- * @wdith: width of grid
+ * @width: width of grid
  * @height: height of grid
  * Return: pointer to start of grid or NULL
  */
@@ -14,7 +14,7 @@ int **alloc_grid(int width, int height)
 	int i;
 	int j;
 
-	buffer = malloc(height * sizeof(int));
+	buffer = malloc(height * sizeof(int *));
 
 	if (buffer == NULL)
 		return (NULL);
