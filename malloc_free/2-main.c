@@ -19,5 +19,10 @@ int main(void)
     }
     printf("%s\n", s);
     free(s);
+
+    s = str_concat("Best ", NULL);
+    printf("%s\n", s);
+    free(s);
+
     return (0);
 }
