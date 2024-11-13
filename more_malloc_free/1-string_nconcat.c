@@ -49,14 +49,25 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	buffer = malloc(size1 + size2 + 1);
 	if (buffer == NULL)
 		return (NULL);
-
-	for (i = 0; i < size1; i++)
+	
+	i = 0;
+	while (i < size1)
+	{
 		buffer[i] = s1[i];
+		i++;
+	}
+	i = 0;
+	while (i < size2)
+	{
+		if (i == n)
+		{
+			buffer[size1 + i] = '\0';
+			break;
+		}
 
-	for (i = 0; i < size2; i++)
 		buffer[size1 + i] = s2[i];
-
-	buffer[size1 + size2 + 1] = '\0';
+		i++;
+	}
 
 	return (buffer);
 }
