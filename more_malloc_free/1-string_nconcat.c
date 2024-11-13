@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include "main.h"
 
-
 /**
  * _strlen - gets length of string
  * @s: string
@@ -41,7 +40,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-      	size1 = _strlen(s1);
+	size1 = _strlen(s1);
 	size2 = _strlen(s2);
 
 	if (size2 > n)
@@ -57,7 +56,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (i = 0; i < size2; i++)
 		buffer[size1 + i] = s2[i];
 
-	buffer[size2 + 1] = '\0';
+	buffer[size1 + size2 + 1] = '\0';
 
 	return (buffer);
 }
