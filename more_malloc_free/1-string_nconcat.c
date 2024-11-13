@@ -21,14 +21,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-	i, size1 = 0, 0;
+	i = 0;
+      	size1 = 0;
 	while (s1[i] != '\0')
 	{
 		size1++;
 		i++;
 	}
 
-	i, size2 = 0;
+	i = 0;
+	size2 = 0;
 	while (s2[i] != '\0' && i < n)
 	{
 		size2++;
