@@ -49,7 +49,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	buffer = malloc(size1 + size2 + 1);
 	if (buffer == NULL)
 		return (NULL);
-	
+
 	i = 0;
 	while (i < size1)
 	{
