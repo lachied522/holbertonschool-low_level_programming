@@ -21,7 +21,7 @@ int *array_range(int min, int max)
 	if (buffer == NULL)
 		return (NULL);
 
-	for (i = min; i < max; i++)
+	for (i = min; i <= max; i++)
 		buffer[i - min] = i;
 
 	return (buffer);
