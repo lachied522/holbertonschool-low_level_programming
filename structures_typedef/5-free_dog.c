@@ -7,6 +7,9 @@
  */
 void free_dog(struct dog *d)
 {
+	if (dog == NULL)
+		return;
+
 	free(d->name);
 	free(d->owner);
 	free(d);
