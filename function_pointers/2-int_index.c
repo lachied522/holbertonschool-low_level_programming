@@ -2,7 +2,7 @@
 #include "function_pointers.h"
 
 /**
- * nt_index - searches for integer in array
+ * int_index - searches for integer in array
  * @array: array to search through
  * @size: size of array
  * @cmp: function that returns 0 for desired integer
@@ -12,7 +12,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
 
-	if (size <= 0)
+	if (size <= 0 || array == NULL || cmp == NULL)
 		return (-1);
 
 	for (i = 0; i < size; i++)
