@@ -1,6 +1,7 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * print_numbers - prints args, separated by string
@@ -19,7 +20,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		printf("%d", va_arg(ap, int));
 
-		if (i < n - 1)
+		if (separator != NULL && i < n - 1)
 			printf("%s", separator);
 	}
 
