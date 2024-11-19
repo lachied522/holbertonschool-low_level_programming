@@ -1,21 +1,23 @@
 #include "variadic_functions.h"
-#include <stdarg.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+#include <stdarg.h>
 
-typedef struct function_map
-{
-	char c;
-	void (*f)(va_list ap);
-} function_map_t;
-
+/**
+ * print_char - prints char from va_list
+ * @ap: va_list
+ */
 void print_char(va_list ap)
 {
 	int c = va_arg(ap, int);
+
 	printf("%c", c);
 }
 
+/**
+ * print_string - prints string from va_list
+ * @ap: va_list
+ */
 void print_string(va_list ap)
 {
 	char *s = va_arg(ap, char *);
@@ -29,15 +31,25 @@ void print_string(va_list ap)
 	printf("%s", s);
 }
 
+/**
+ * print_float - prints float from va_list
+ * @ap: va_list
+ */
 void print_float(va_list ap)
 {
 	double f = va_arg(ap, double);
+
 	printf("%f", f);
 }
 
+/**
+ * print_int - prints int from va_list
+ * @ap: va_list
+ */
 void print_int(va_list ap)
 {
 	int i = va_arg(ap, int);
+
 	printf("%i", i);
 }
 
@@ -58,11 +70,12 @@ void print_all(const char * const format, ...)
 	va_list ap;
 	unsigned int i;
 	unsigned int j;
+	char *separator;
 
 	va_start(ap, format);
-	
-	i = 0;
 
+	i = 0;
+	separator = "";
 	while (format[i] != '\0')
 	{
 		j = 0;
@@ -70,7 +83,9 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == Function_map[j].c)
 			{
+				printf("%s", separator);
 				Function_map[j].f(ap);
+				separator = ", ";
 				break;
 			}
 			j++;
