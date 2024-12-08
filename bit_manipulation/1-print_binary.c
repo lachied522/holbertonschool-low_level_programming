@@ -10,7 +10,7 @@ void print_binary(unsigned long int n)
 {
 	int i;
 	int shouldPrint = 0;
-	unsigned int k;
+	unsigned long int k;
 
 	if (n == 0)
 	{
@@ -18,7 +18,7 @@ void print_binary(unsigned long int n)
 		return;
 	}
 
-	for (i = 31; i >= 0; i--)
+	for (i = 64 - 1; i >= 0; i--)
 	{
 		k = n >> i;
 		if (k & 1)
